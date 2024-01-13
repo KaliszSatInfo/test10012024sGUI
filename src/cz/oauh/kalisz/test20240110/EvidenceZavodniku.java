@@ -12,6 +12,10 @@ import java.util.Scanner;
 public class EvidenceZavodniku {
     private List<Zavodnik> seznamZavodniku = new ArrayList<>();
 
+    public EvidenceZavodniku(List<Zavodnik> zavodnikList) {
+        seznamZavodniku.addAll(zavodnikList);
+    }
+
     public void pridejZavodnika(Zavodnik zavodnik){
         seznamZavodniku.add(zavodnik);
     }
@@ -46,5 +50,4 @@ public class EvidenceZavodniku {
             throw new RuntimeException(e);
         }
     }
-
 }
