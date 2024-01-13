@@ -53,6 +53,12 @@ public class ZavodnikForm extends JFrame{
         textArea4.setText(String.valueOf(zavodnik.getFinancniCastka()));
         textArea5.setText(String.valueOf(zavodnik.isDivokaKarta()));
         textArea6.setText(zavodnik.getDatumPrihlaseni().toString());
+        textArea1.setEditable(false);
+        textArea2.setEditable(false);
+        textArea3.setEditable(false);
+        textArea4.setEditable(false);
+        textArea5.setEditable(false);
+        textArea6.setEditable(false);
     }
     public static void main(String[] args) {
         ZavodnikForm z = new ZavodnikForm();
