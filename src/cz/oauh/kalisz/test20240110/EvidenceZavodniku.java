@@ -10,10 +10,10 @@ import java.util.List;
 import java.util.Scanner;
 
 public class EvidenceZavodniku {
-    private List<Zavodnik> seznamZavodniku = new ArrayList<>();
+    private final List<Zavodnik> seznamZavodniku = new ArrayList<>();
 
-    public EvidenceZavodniku(List<Zavodnik> zavodnikList) {
-        seznamZavodniku.addAll(zavodnikList);
+    public EvidenceZavodniku(List<Zavodnik> seznamZavodniku) {
+        this.seznamZavodniku.addAll(seznamZavodniku);
     }
 
     public void pridejZavodnika(Zavodnik zavodnik){

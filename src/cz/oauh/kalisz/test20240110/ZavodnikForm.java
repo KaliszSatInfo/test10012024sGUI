@@ -46,7 +46,6 @@ public class ZavodnikForm extends JFrame{
             displayZavodnik(evidence.ziskejSeznamZavodniku().get(currentIndex));
         }
     }
-
     public void displayZavodnik(Zavodnik zavodnik) {
         textArea1.setText(zavodnik.getText());
         textArea2.setText(String.valueOf(zavodnik.getVysledek()));
@@ -55,7 +54,6 @@ public class ZavodnikForm extends JFrame{
         textArea5.setText(String.valueOf(zavodnik.isDivokaKarta()));
         textArea6.setText(zavodnik.getDatumPrihlaseni().toString());
     }
-
     public static void main(String[] args) {
         ZavodnikForm z = new ZavodnikForm();
         z.setContentPane(z.panel);
